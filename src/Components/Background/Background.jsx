@@ -22,4 +22,8 @@ const Background = ({ playStatus, heroCount }) => {
     }
 };
 
+    <div className='backgroundlista'>
+
+    </div>
+
 export default Background;

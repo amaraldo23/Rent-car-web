@@ -53,6 +53,9 @@ body, html {
 
 * {
   box-sizing: border-box; /* Siguron që padding dhe border të përfshihen në madhësinë e elementit */
+  font-size: 42px;
+  font-weight: 500;
+  color: white;
 }
 
 .car-list {
@@ -65,7 +68,7 @@ body, html {
 .car-item {
   border: 1px solid #ccc;
   padding: 10px;
-  width: 200px;
+  width: 24%;
   text-align: center;
 }
 

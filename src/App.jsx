@@ -33,8 +33,6 @@ const App = () => {
                 playStatus={playStatus}
             />
             <Home/>
-            
-
         </div>
     )
 };
