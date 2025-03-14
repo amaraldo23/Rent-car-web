@@ -3,6 +3,7 @@ import Background from "./Components/Background/Background";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Home from "./Components/pages/Home";
+import CarDetails from "./Components/Pages/CarDetails";
 
 const App = () => {
     let heroData = [
@@ -33,6 +34,7 @@ const App = () => {
                 playStatus={playStatus}
             />
             <Home/>
+            <CarDetails/>
         </div>
     )
 };

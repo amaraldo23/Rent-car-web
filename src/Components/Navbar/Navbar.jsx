@@ -6,7 +6,6 @@ const Navbar = () => {
         <div className='nav-logo'>Rent-Car</div>
             <ul className='nav-menu'>
                 <li>Home</li>
-                <li>Explore</li>
                 <li>About</li>
                 <li className='nav-contact'>Contact</li>
             </ul>

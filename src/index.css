@@ -3,16 +3,15 @@ body{
   padding: 0;
   font-family: poppins;
   overflow: hidden;
-}
-
-
-body {
-  font-family: 'Outfit', sans-serif;
-  margin: 0;
-  padding: 0;
+  text-align: justify;
   box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
 }
 
+.qender{
+  text-align: justify;
+
+}
 .home {
   padding: 20px;
 }
@@ -23,6 +22,8 @@ body {
   gap: 20px;
 }
 
+.car-item > p{font-size: 35px}
+
 .car-item {
   border: 1px solid #ccc;
   padding: 10px;
@@ -32,9 +33,10 @@ body {
 
 .car-item img {
   max-width: 100%;
-  height: auto;
+  height: 215px !important;
+  display: block !important;
+  margin: 0 auto !important;
 }
-
 /*Ndryshimet*/
 
 body, html {
@@ -51,7 +53,7 @@ body, html {
 }
 
 
-* {
+*{
   box-sizing: border-box; /* Siguron që padding dhe border të përfshihen në madhësinë e elementit */
   font-size: 42px;
   font-weight: 500;
@@ -101,7 +103,7 @@ body {
 }
 
 .home {
-  background-color:dimgray;
+  background-color:rgb(0 0 0 / 70%);
   min-height: calc(100vh - 60px); /* Zbrit lartësinë e navbar-it */
 }
 
@@ -116,4 +118,195 @@ body {
   max-width: 100%;
   height: auto;
   display: block; /* Siguron që imazhi të mos ketë hapësirë të panevojshme */
+}
+
+/* src/index.css */
+.details-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #303030; /* Ngjyrë blu */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #0084ff; /* Ngjyrë blu më e errët kur kaloni mbi butonin */
+}
+
+/* src/index.css */
+.car-details {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.car-details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.date-picker {
+  margin: 20px 0;
+}
+
+.date-picker label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.rent-button {
+  padding: 10px 20px;
+  background-color: #28a745; /* Ngjyrë jeshile */
+  color: #fff;
+  margin-block: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rent-button:hover {
+  background-color: #218838; /* Ngjyrë jeshile më e errët */
+}
+
+
+/* Faqaj e re per cdo makine */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #000000; /* Ngjyrë e bardhë për background */
+  color: #333; /* Ngjyrë e zezë për tekstin */
+  text-align: center; /*shkrimi ne mes te fqes*/
+}
+
+.car-details-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Detajet në të majtë */
+.car-image-section {
+  width: 100%; /* Fotografia zë gjithë gjerësinë e faqes */
+  margin: 20px 0; /* Hapësirë sipër dhe poshtë fotos */
+}
+
+.car-image-section img {
+  max-width: 80%; /* Fotografia zë 80% të gjerësisë së faqes */
+  height: auto;
+  border-radius: 12px; /* Kënde të rrumbullakosura */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hije e theksuar */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efekt hover */
+}
+
+.car-image-section img:hover {
+  transform: scale(1.05); /* Zmadho pak fotografinë kur kalon mbi të */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Hije më e theksuar kur kalon mbi të */
+}
+
+/* src/index.css */
+.details-section,
+.features-section {
+  width: 100%; /* Zë gjithë gjerësinë e faqes */
+  max-width: 800px; /* Kufizo gjerësinë maksimale */
+  margin: 20px auto; /* Qendro dhe shto hapësirë */
+  padding: 20px;
+  background-color: #fff; /* Ngjyrë e bardhë për background */
+  border-radius: 12px; /* Kënde të rrumbullakosura */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hije e lehtë */
+}
+
+.details-section h2,
+.features-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #007bff; /* Ngjyrë blu për titullin */
+}
+
+.detail-item {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #555; /* Ngjyrë gri e çelët për tekstin */
+}
+
+.features-list {
+  list-style-type: none; /* Hiq pikat nga lista */
+  padding: 0;
+}
+
+.features-list li {
+  font-size: 1em;
+  margin: 8px 0;
+  color: #555; /* Ngjyrë gri e çelët për tekstin */
+}
+
+/* Tabela e rezervimit */
+.reservation-section {
+  background-color: dimgray;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto; /* Qendro dhe shto hapësirë */
+  padding: 20px;
+  border-radius: 12px; /* Kënde të rrumbullakosura */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hije e lehtë */
+}
+
+.reservation-section h2 {
+
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #000000; /* Ngjyrë blu për titullin */
+}
+
+.date-picker {
+  margin-bottom: 15px;
+}
+
+.date-picker label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000000; /* Ngjyrë gri e çelët për tekstin */
+}
+
+.rent-button {
+  padding: 12px 24px;
+  background-color: #28a745; /* Ngjyrë jeshile */
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Kënde të rrumbullakosura */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rent-button:hover {
+  background-color: #218838; /* Ngjyrë jeshile më e errët */
+}
+
+/* Butoni për t'u kthyer mbrapa */
+.back-button-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Ngjyrë blu */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Ngjyrë blu më e errët */
 }

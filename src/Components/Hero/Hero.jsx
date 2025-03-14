@@ -9,8 +9,10 @@ const Hero = ({ heroData, setHeroCount, heroCount, setPlayStatus, playStatus }) 
             <div className='hero-text'>
             <div className='hero-play-button' onClick={() => setPlayStatus(!playStatus)}>
             </div>
+            <div className='qender'>
                 <p>{heroData.text1}</p>
                 <p>{heroData.text2}</p>
+            </div>   
         </div>
         <div className='hero-explore'>
             <p>Explore the features</p>
